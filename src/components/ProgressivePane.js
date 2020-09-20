@@ -7,6 +7,7 @@ import { useWindowSize } from "react-use";
 
 const styles = StyleSheet.create({
   backdrop: {
+    pointerEvents: "box-none",
     display: "flex",
     width: "100vw",
     height: "100vh",
@@ -14,13 +15,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   fill: {
+    pointerEvents: "box-none",
     position: "absolute",
     top: 0,
     left: 0,
     bottom: 0,
     right: 0,
     display: "flex",
-    zIndex: -1,
     overflow: "hidden",
   },
 });
@@ -45,13 +46,14 @@ function ProgressivePane({ renderBackdrop, renderContent, ...extraProps }) {
       borderRadius: 15,
       overflow: "hidden",
       boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+      pointerEvents: "box-none",
     },
   };
 
   return (
     <div className={css(styles.backdrop)}>
-      <div className={css(styles.fill)}>
-        {renderBackdrop({})}
+      <div className={css(styles.fill)} style={{ zIndex: -1 }}>
+        {renderBackdrop({ isMobile })}
       </div>
       <div {...contentProps}>
         {renderContent({ isMobile })}
