@@ -4,7 +4,7 @@ import Lottie from "react-lottie";
 import { Pane, Heading, Button, Paragraph, Small } from "evergreen-ui";
 import { StyleSheet, css } from "aphrodite";
 
-import Twitter from "../assets/lottie/twitter.json";
+import Coin from "../assets/lottie/coin.json";
 
 import { Reason } from ".";
 
@@ -27,19 +27,20 @@ function TwitterAuth({ isMobile }) {
         flexDirection="column"
       >
         <Pane
+          height="10em"
           display="flex"
           alignItems="center"
           justifyContent="center"
         >
           <Lottie
             options={{
-              loop: false,
+              loop: true,
               autoplay: true,
-              animationData: Twitter,
+              animationData: Coin,
               rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
             }}
-            height="8em"
-            width="8em"
+            height="15em"
+            width="15em"
           />
         </Pane>
         <Pane
@@ -52,23 +53,23 @@ function TwitterAuth({ isMobile }) {
               className={css(styles.centerText)}
               color="black"
               size={600}
-              children="Uni uses Twitter to securely link your account."
+              children="You're about to make a contribution!"
             />
           </Pane>
         </Pane>
         <Pane className={css(styles.separator)} />
         <Pane className={css(styles.separator)} />
         <Reason
-          title="Because it's transparent."
-          description="We just need to prove that you are you. We don't need any special permissions to give you a wallet."
-          iconColor="#7CC5F7"
+          title="Your payment is secure."
+          description="We use Apple Pay to accept payments, meaning that you get full transparency  and don't need to share any sensitive information."
+          emoji="🔒"
         />
         <Pane className={css(styles.separator)} />
         <Pane className={css(styles.separator)} />
         <Reason
-          title="And decentralized."
-          description="All of your funds are managed by the Ethereum blockchain. This means the only person in control is you."
-          iconColor="#7CC5F7"
+          emoji="⚡"
+          title="Your contribution is immediate!"
+          description="100% of the donation you make will go directly to the iniative. This will help the admins take action fast!"
         />
         <Pane
           flexDirection="column"
@@ -78,7 +79,7 @@ function TwitterAuth({ isMobile }) {
         >
           <Paragraph className={css(styles.centerText)}>
             <Small
-              children={`By ${isMobile ? "tapping" : "clicking"} continue, you agree to be courteous and respectful to other users.`}
+              children={"All payments are processed using Wyre."}
             />
           </Paragraph>
           <Pane className={css(styles.separator)} />
@@ -88,7 +89,7 @@ function TwitterAuth({ isMobile }) {
             justifyContent="center"
             height={56}
             appearance="primary"
-            children="Continue"
+            children="Contribute via Apple Pay"
           />
           <Pane className={css(styles.separator)} />
           <Button

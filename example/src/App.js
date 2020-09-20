@@ -4,7 +4,7 @@ import React, { useCallback } from "react";
 import ShadertoyReact from "shadertoy-react";
 import { ProgressivePane } from "react-progressive-pane";
 
-import { TwitterAuth } from "./components";
+import { TwitterAuth, PaymentRequest } from "./components";
 
 function App() {
   const renderBackdrop = useCallback(
@@ -23,7 +23,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
   );
   const renderContent = useCallback(
     (props) => (
-      <TwitterAuth {...props} />
+      <PaymentRequest {...props} />
+      //<TwitterAuth {...props} />
     ),
     [],
   );
