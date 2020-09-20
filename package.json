@@ -1,6 +1,6 @@
 {
   "name": "react-progressive-pane",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "⚛️ A mobile experience on the web, and a mobile experience on a mobile, although it's basically just a centered div.",
   "main": "dist",
   "repository": "https://github.com/cawfree/react-progressive-pane",
