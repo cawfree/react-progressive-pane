@@ -9,13 +9,11 @@
     "aphrodite": "^2.4.0",
     "evergreen-ui": "^5.1.1",
     "react": "^16.13.1",
-    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-lottie": "^1.2.3",
+    "react-progressive-pane": "../",
     "react-scripts": "3.4.3",
-    "react-use": "^15.3.4",
-    "shadertoy-react": "^1.1.1",
-    "type-check": "^0.4.0"
+    "shadertoy-react": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

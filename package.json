@@ -1,0 +1,33 @@
+{
+  "name": "react-progressive-pane",
+  "version": "0.0.1-alpha.0",
+  "description": "⚛️ A mobile experience on the web, and a mobile experience on a mobile, although it's basically just a centered div.",
+  "main": "dist",
+  "repository": "https://github.com/cawfree/react-progressive-pane",
+  "author": "Alex Thomas (@cawfree) <alex@getuni.app>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn ; babel src --out-dir dist ; rm -rf node_modules"
+  },
+  "dependencies": {
+    "aphrodite": "^2.4.0",
+    "react-device-detect": "^1.13.1",
+    "react-use": "^15.3.4",
+    "type-check": "^0.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "leasot": "^11.3.0",
+    "prettier": "^2.1.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  }
+}

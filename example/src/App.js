@@ -1,27 +1,18 @@
-import React, { useCallback } from 'react';
-import ShadertoyReact from 'shadertoy-react';
+import React, { useCallback } from "react";
+import ShadertoyReact from "shadertoy-react";
+import Lottie from "react-lottie";
 import { Pane, Heading, Button, TickCircleIcon, Paragraph, Small } from "evergreen-ui";
 import { StyleSheet, css } from "aphrodite";
-import Lottie from "react-lottie";
+import { ProgressivePane } from "react-progressive-pane";
 
-import './App.css';
 import "./index.css";
-
 import Twitter from "./assets/lottie/twitter.json";
 
-import { ProgressivePane } from "./lib";
 
 const styles = StyleSheet.create({
-  emoji: {
-    fontSize: "5em",
-  },
   centerText: { textAlign: "center" },
-  separator: {
-    height: "0.5em",
-  },
-  smallSeparator: {
-    height: "0.25em",
-  }
+  separator: { height: "0.5em" },
+  smallSeparator: { height: "0.25em" }
 });
 
 function Reason({ title, description }) {
@@ -62,7 +53,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
   vec3 col = 0.5 + 0.5*cos(iTime+uv.xyx+vec3(0,2,4));
   fragColor = vec4(col,1.0);
 }
-          `.trim()}
+`.trim()}
       />
     ),
     [],
@@ -95,7 +86,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ) {
             height="8em"
             width="8em"
           />
-          {false && <div className={css(styles.emoji)} children="👋" />}
         </Pane>
         <Pane
           display="flex"
