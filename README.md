@@ -30,6 +30,7 @@ export default () => {
       <div
         style={{
           display: "flex",
+          flex: 1,
           backgroundColor: "red",
         }}
       />
