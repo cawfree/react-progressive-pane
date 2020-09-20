@@ -1,5 +1,4 @@
 # react-progressive-pane
-⚛️  A mobile experience on the web, and a mobile experience on a mobile, although it's basically just a centered `<div />`.
 
 <p align="center">
   <img src="./assets/logo.gif" width="554" height="314" alt="react-responsive-pane" />
@@ -7,13 +6,13 @@
 
 ## 🚀 Getting Started
 
-Using [**yarn**]():
+Using [**yarn**](https://yarnpkg.com):
 
 ```
 yarn add react-progressive-pane
 ```
 
-Using [**npm**]():
+Using [**npm**](https://npmjs.com):
 
 ```
 npm i -s react-progressive-pane
