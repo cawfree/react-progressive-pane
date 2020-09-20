@@ -10,6 +10,14 @@
   "scripts": {
     "build": "yarn ; babel src --out-dir dist ; rm -rf node_modules"
   },
+  "keywords": [
+    "react",
+    "responsive",
+    "mobile",
+    "widget",
+    "container",
+    "layout"
+  ],
   "dependencies": {
     "aphrodite": "^2.4.0",
     "react-device-detect": "^1.13.1",
